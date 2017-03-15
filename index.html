@@ -1,0 +1,127 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Media Gallery</title>
+    <!-- TODO:    <link rel="stylesheet" href="styles/scss/newsass.scss">
+    <link rel="stylesheet" href="dist/styles/main.min.css">
+            <link rel="stylesheet" href="styles/main.css"> -->
+    <link rel="stylesheet" href="dist/styles/newsass.min.css">
+    <script src="https://use.fontawesome.com/3e406631b8.js"></script>
+    <!-- TODO: <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> -->
+</head>
+
+<body>
+    <header>
+        <nav class="row nav-bar">
+            <div class="logo-bar">
+                <button type="button" id="logo" name="navbar-home" class="logo-home">
+                 <i class="fa fa-motorcycle" aria-hidden="true"></i>
+                 <i class="fa fa-cogs" aria-hidden="true"></i>
+                    <a href="#">BMWidgets</a>
+                </button>
+            </div>
+        </nav>
+        <section class="account-nav">
+            <button type="button" name="button" data-target=".modal-profile" id="btnShowModal" class="btn Acct">Login</button>
+            <span></span>
+            <button type="button" name="button" id="btnShowModal" data-target=".modal-cart" class="btn Cart">
+            <i class="fa fa-shopping-cart" aria-hidden="true"id="btnShowModal"></i></button>
+        </section>
+    </header>
+
+    <section class="modal-gallery">
+
+        <div class="modal-profile">
+            <div class="overlay-profile"></div>
+            <div class="modal">
+                <button type="button" name="button">
+                <i class="close fa fa-window-close" aria-hidden="true"></i></button>
+                <form class="" action="index.html" method="post">
+                    <label for="">Username</label><input type="text" name="" value="">
+                    <label for="">Password</label><input type="text" name="" value="">
+                    <label for="">Not a member?</label>
+                    <button type="button" name="button" data-target=".modal-register" class="btn register">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="modal-register">
+            <div class="overlay-register"></div>
+            <div class="modal">
+                <form class="" action="index.html" method="post">
+                    <label for="">Create Username</label><input type="text" name="" value="">
+                    <label for="">Create Password</label><input type="text" name="" value="">
+                </form>
+            </div>
+        </div>
+
+        <div class="modal-cart">
+            <div class="overlay-cart"></div>
+            <div class="modal">
+                <label for="">It's all here</label>
+            </div>
+        </div>
+
+        <div class="modal-search">
+            <div class="overlay-profile"></div>
+            <div class="modal"></div>
+        </div>
+
+    </section>
+
+    <section class="hero">
+
+        <ul class="search">
+            <li>
+                <button type="button" id="search" name="search-button" class="search-button">
+            <i class='fa fa-search' aria-hidden='true'></i></button>
+                <input type="search" name="searchpage" value="Search by size or motorcycle model:">
+                <button type="submit" id="submit" name="button">Submit</button></li>
+        </ul>
+
+    </section>
+
+    <section class="main-content">
+        <div class="img-gallery">
+            <div class="product-cell widget">
+                <h1>Widgets</h1>
+                <!--                 <button id="btnShowModal"></button>  -->
+                <img src="images/Gear-01.png" alt="" style="" class="product-img1">
+                <span>
+                    {{  }}
+                </span>
+
+            </div>
+            <div class="product-cell cog">
+                <h1>Cogs</h1>
+                <!--                  <button id="btnShowModal"></button>  -->
+                <img src="images/Gear-02.png" alt="" style="" class="product-img2">
+
+
+            </div>
+            <div class="product-cell sprocket">
+                <h1>Sprockets</h1>
+                <!--                  <button id="btnShowModal"></button>  -->
+                <img src="images/Gear-03.png" alt="" style="" class="product-img3">
+
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copywrite</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
+
+<!--
+-->

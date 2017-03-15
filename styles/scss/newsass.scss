@@ -1,0 +1,302 @@
+//@import '_reset.scss';
+* {
+    box-sizing: border-box;
+}
+
+/* TODO: build this to be fitted for mobile and add other rules for desktop*/
+
+body, ul, li, a, h1, input, p, div {
+    font-family: Gotham, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #8CA3B1;
+}
+
+body {
+  //margin-right: -31px; // WAS AT 33px b4/// watch incase keeps growing///
+  background-color: #F5F6FC;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a, input, .search {
+  display: block;
+}
+
+header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  z-index: 20;
+}
+
+.logo-bar {
+//     width: 100%;
+//     padding-left: 3%;
+ }
+
+ .nav-bar {
+  // background: #F5F6FC;
+//    display: flex;
+//    flex-wrap: wrap;
+    //display: block;
+}
+
+//////////////////////////////////////////////////////////////////
+//
+// logo
+//
+//////////////////////////////////////////////////////////////////
+
+button {
+  background: #F5F6FC;
+}
+
+.logo-bar a {
+  background: #F5F6FC;
+}
+
+.fa-cogs {
+  transform: rotate(125deg);
+  margin-left: -22px;
+  margin-top: 15px;
+}
+
+.fa-motorcycle {
+  margin-top: -3px;
+  transform: rotate(-30deg);
+}
+
+#logo {
+  display: flex;
+  font-size: 70px;
+  height: 120px;
+  border: none;
+  color: #2E9BDA;
+  margin-left: -40px;
+}
+
+//////////////////////////////////////////////////////////////////
+//
+// account nav
+//
+//////////////////////////////////////////////////////////////////
+
+.acct-btn {
+//  display: flex;
+//  flex-direction: row;
+  border: 1px solid #8CA3B1;
+  border-radius: 2px;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.account-nav span {
+  border: 1px solid #8CA3B1;
+  height: 45px;
+  display: inline-block;
+  margin-bottom: -15px;
+}
+
+.account-nav {
+  margin-bottom: 20px;
+}
+
+.account-nav i {
+  font-size: 45px;
+  margin-bottom: 10px;
+  vertical-align: middle;
+  color: #2E9BDA;
+}
+
+.Cart{
+  border-style: hidden;
+}
+
+//////////////////////////////////////////////////////////////////
+//
+// HERO
+//
+//////////////////////////////////////////////////////////////////
+
+#search {
+  color: #F5F6FC;
+  font-size: 30px;
+  border: none;
+  margin-top: -4px;
+  background: none;
+}
+
+input {
+  font-size: 15px;
+  background: #F5F6FC;
+  width: 260px;
+}
+
+.search li {
+  display: flex;
+  height: 30px;
+  margin-right: 55px;
+  height: 50px;
+}
+
+.search input {
+  background: #F5F6FC;
+  opacity: .85;
+}
+
+#submit {
+  color: #F5F6FC;
+  font-size: 20px;
+  border-style: none;
+  background: #8CA3B1;
+}
+
+// TODO:
+// consider placing the search bar in center
+//and making bigger like
+// amazon or ebay search
+.search {
+  //clear: both;
+  float: right;
+  margin-right: -50px;
+  z-index: 5;
+}
+
+.hero {
+  background-image: url(../../images/hero.jpg);
+  background-position: left -50px;
+  height: 250px;
+//  z-index: -1;
+}
+
+//////////////////////////////////////////////////////////////////
+//
+// main body
+//
+////////////////////////////////////////////////////////////////////
+
+.main-content {
+  clear: both;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.img-gallery img {
+  box-shadow: 10px 10px 35px #888888;
+  border-radius: 50%;
+//  margin-top: -10px;
+}
+
+.img-gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-gallery img {
+  //display: flex;
+  //border: 1px solid black;
+  margin: 15px;
+  margin-top: 3px;
+}
+
+//////////////////////////////////////////////////////////////////
+//
+// MODALS
+//
+////////////////////////////////////////////////////////////////////
+/*
+.overlay {
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: black;
+    opacity:.4;
+} */
+.modal-gallery {
+
+}
+.modal {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 5;
+    padding: 15px;
+}
+
+.modal input, label {
+  padding: 10px;
+  margin: 5px;
+  font-size: 25px;
+}
+
+.fa-window-close {
+  
+  color: #2E9BDA;
+}
+
+
+
+/* TODO:
+colors pallet
+#111010 bmw black
+#2E9BDA bmw blue #008AC9
+#F5F6FC bmw white
+#2D9CDB bmw blue2 #2B115A
+#8CA3B1 bmw grey
+ */
+
+/* mobile ///////////// color: green; ////////////// mobile  */
+
+ @media screen and (max-width:767px) {
+
+
+ }
+
+/* medium ///////////// color: yellow; ////////////// medium  */
+
+ @media screen and (min-width:768px) {
+   .img-gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+
+   .product-cell {
+     padding: 0;
+     width: 50%;
+   }
+
+   .product-cell img {
+     width: 90%;
+   }
+
+ }
+
+/* large ///////////// color: red; ////////////// large  */
+
+ @media screen and (min-width:960px) {
+
+   .img-gallery {
+     flex-direction: row;
+   }
+
+   .product-cell {
+     width: 33%;
+   }
+
+
+
+ }
